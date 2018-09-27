@@ -1,0 +1,1 @@
+start proto_excel\bin\Debug\proto_excel server

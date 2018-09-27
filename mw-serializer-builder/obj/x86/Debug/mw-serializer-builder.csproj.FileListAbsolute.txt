@@ -1,0 +1,2 @@
+F:\Xproject\tools\mw-serializer-builder\bin\Debug\mw-serializer-builder.exe.config
+F:\Xproject\tools_src\mw-serializer-builder\bin\Debug\mw-serializer-builder.exe.config

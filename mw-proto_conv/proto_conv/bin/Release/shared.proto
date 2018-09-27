@@ -1,0 +1,192 @@
+message Enums{
+
+enum AttrType {
+	EXTATTR_HP = 0;
+	EXTATTR_PATK = 1;
+}
+
+enum InsType
+{
+	INS_TYPE_COMM = 0;							//普通副本
+	INS_TYPE_HARD = 1;							//精英副本
+}
+
+enum SpeInsType
+{
+	SPE_INS_TYPE_WUXING = 0;						//五行副本
+	SPE_INS_TYPE_MONEY = 1;							//金钱副本
+	SPE_INS_TYPE_EXP = 2;								//经验副本
+	SPE_INS_TYPE_SOUWEI = 3;						//守卫副本
+}
+
+enum SignType
+{
+	SIGN_TYPE_COMMON = 1;					//签到
+	SIGN_TYPE_INVEST = 2;					//投资
+	SIGN_TYPE_LEVEL = 3;					//等级礼包
+	SIGN_TYPE_VIP = 4;						//VIP等级礼包
+	SIGN_TYPE_REWARD = 5;					//奖励领取
+	SIGN_TYPE_LOGIN = 6;					//累积登录
+	SIGN_TYPE_LOGINEX = 7;					//连续登录
+	SIGN_TYPE_LOGIN_NO_CLEAE = 8;			//累积登录(不清)
+	SIGN_TYPE_LOGINEX_NO_CLEAE = 9;			//连续登录(不清)
+}
+
+enum ItemType {
+	ITEM_TYPE_COMMON = 0;
+	ITEM_TYPE_EXP = 1;			 			///经验丹
+	ITEM_TYPE_QUALITY = 2;					///进阶道具
+	ITEM_TYPE_EQUIP_CL = 3;					///装备材料
+	ITEM_TYPE_XIAOHAO = 4;					///可使用的道具
+	ITEM_TYPE_BOX = 5;						///宝箱
+  	ITEM_TYPE_KEY = 6;                		///钥匙
+	ITEM_TYPE_STONE_CL = 7;					///灵石碎片
+}
+
+enum PetType {
+  Pet_TYPE_PUTONG=0;               //普通
+  Pet_TYPE_YOUXIU=1;               //优秀
+  Pet_TYPE_SHENSHOU=2;             //神兽
+}
+
+enum RewardType {
+	RWD_TYPE_ECONOMIC = 0;
+	RWD_TYPE_ITEM = 1;
+	RWD_TYPE_HERO = 2;
+	RWD_TYPE_HERO_SOUL = 3;
+	RWD_TYPE_STONE = 4;
+	RWD_TYPE_PET = 5;
+	RWD_TYPE_TITLE = 6;
+    RWD_TYPE_EQUIP = 7;
+}
+
+enum SysNtfType
+{
+	SYS_NTF_TYPE_COMMON = 0;
+	SYS_NTF_TYPE_LOGIN = 1;
+}
+
+enum TaskType
+{
+	TASK_TYPE_COMMON = 0;			///普通任务
+	TASK_TYPE_DAILY = 1;			///每日任务
+	TASK_TYPE_ACHIEVE = 2;			///成就
+	TASK_TYPE_MAIN = 3;				///主线
+	TASK_TYPE_SIGN = 4;				///活动相关
+}
+
+enum TaskConditionType
+{
+	TASK_CONDITION_STAGE = 0;				///通过关卡
+	TASK_CONDITION_MONSTER = 1;			///杀死怪物
+	TASK_CONDITION_ITEM = 2;				///获得物品
+}
+
+enum RandShopType 
+{
+	RAND_SHOP_TYPE_LINGLONG = 0;	///玲珑阁
+	RAND_SHOP_TYPE_QIWU = 1;			///奇物阁
+	RAND_SHOP_TYPE_ZHENBAO = 2;		///珍宝阁
+	RAND_SHOP_TYPE_RONGYU = 3;		///荣誉商店
+	RAND_SHOP_TYPE_YONGQI =	4;		///勇气商店
+	RAND_SHOP_TYPE_BAIZHAN = 5;		///百战商店
+	RAND_SHOP_TYPE_JUNBEI =	6;		///军备商店
+	RAND_SHOP_TYPE_BAOKU=	7;			///宝库商店
+}
+
+enum CommonShopType 
+{
+	COMMON_SHOP_TYPE_YUANBAO = 0;		///元宝商店
+	COMMON_SHOP_TYPE_BANGPAI = 1;		///帮派商店
+}
+
+enum NeedConditionType
+{
+	NEED_CARD_LEVEL = 0;				/// 卡牌等级
+	NEED_CARD_LEVELEX = 1;			/// 卡牌阶段
+	NEED_CARD_EQUIPQUALITY = 2;	/// 武器品质
+}
+
+enum CardAttType
+{
+	CARD_ATTTYPE_NULL = 0;
+	CARD_ATTTYPE_WGKZ = 1;//外功控制
+	CARD_ATTTYPE_NGKZ = 2;//内功控制
+	CARD_ATTTYPE_WGSH = 3;//外功伤害
+	CARD_ATTTYPE_NGSH = 4;//内功伤害
+	CARD_ATTTYPE_ALL = 5;//内功伤害和外功伤害
+}
+
+enum PetAttType
+{
+      Pet_ATTTYPE_NULL=0;
+      Pet_ATTTYPE_WGGJ=1;      //外攻攻击
+      Pet_ATTTYPE_NGGJ=2;      //内功攻击
+      Pet_ATTTYPE_WGFY=3;      //外功防御 
+      Pet_ATTTYPE_NGFY=4;      //内功防御
+      Pet_ATTTYPE_GSM=5;       //高生命
+      Pet_ATTTYPE_ZY=6;        //中庸
+
+}
+
+enum GuildBuildType
+{
+	GUILD_BUILD_TYPE_GUILD = 0;
+	GUILD_BUILD_TYPE_SHOP = 1;			//商店
+	GUILD_BUILD_TYPE_PRAY = 2;			//祈福店
+}
+
+enum EffectType
+{
+	EffectType_Invalid = 0;
+	EffectType_Wait = 1;
+
+	EffectType_CameraAnimation = 2;
+	EffectType_CameraShake = 3;
+	EffectType_CameraMove = 4;
+	EffectType_CameraPauseResume = 5;
+	EffectType_CameraReset = 6;
+
+	EffectType_FadeIn = 7;
+	EffectType_FadeOut = 8;
+	EffectType_FadeText= 9;
+
+	EffectType_Talk = 10;
+
+	EffectType_ChangeScene = 11;
+	EffectType_Teleport = 12;
+	EffectType_TriggerState = 13;
+	EffectType_TriggerGate = 14;
+	EffectType_TriggerVisible = 15;
+
+	EffectType_PlayBgm = 16;
+	EffectType_StopBgm = 17;
+	EffectType_PlayAudio = 18;
+
+	EffectType_SpawnCharacter = 19;
+	EffectType_RemoveCharacter = 20;
+	EffectType_CharacterMove = 21;
+	EffectType_CharacterAction = 22;
+	EffectType_CharacterPaoPao = 23;
+	EffectType_CharacterBuff = 24;
+	EffectType_CharacterAI = 25;
+	EffectType_SpawnSceneMonster = 26;
+	EffectType_CharacterRandomBuff = 27;
+
+	EffectType_NewbieGuide = 28;
+	EffectType_RemoveGroup = 29;
+}
+}
+
+message TFloat {
+	required int32 v = 1;
+}
+
+message TTFloat {
+	required int32 v = 1;
+}
+
+enum PkgFlag {
+	PKG_COMPRESS = 0;
+	PKG_CRYPTO = 1;
+}
